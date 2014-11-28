@@ -46,13 +46,6 @@
       }
     });
 
-
-    // gallery
-    $("a[rel=gallery_group]").fancybox({
-      'padding' :40
-    });
-
-
     // flaxslider
     $('.flexslider').flexslider({
       animation: "slide"
@@ -67,7 +60,7 @@
       if($.browser.safari){
       $('body').animate( { scrollTop: destination }, 1100 );
       }else{
-      $('html,body').animate( { scrollTop: destination - 56}, 1100 );
+      $('html,body').animate( { scrollTop: destination - 80}, 1100 );
       }
       return false;
     });
@@ -96,5 +89,10 @@
     $('.popup_open').on('click',function(){
       var modal = $(this).data("modal");
       $(modal).arcticmodal();
+    });
+
+    // gallery
+    $("a[rel=gallery_group]").fancybox({
+      'padding' :40
     });
   });
