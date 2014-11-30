@@ -5,9 +5,13 @@
 @import "../css/jquery.arcticmodal-0.3.css";
 article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
 /* Global properties ======================================================== */
-html {width:100%}
+html {
+  width:100%;
+  height: 100%;
+}
 
 body {
+  height: 100%;
   font-family:'Fira Sans',Arial, Helvetica, sans-serif;
   font-size:15px;
   line-height:23px;
@@ -23,6 +27,10 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.general_box{
+  min-height: 100%;
+  padding-bottom: 471px;
 }
 /*---------------------- fonts ------------------*/
 .pts{font-family: 'PT Sans', sans-serif;}
@@ -788,7 +796,7 @@ header {
   .free_shipping:before{background-position: 0 -149px;}
   .pickup:before{background-position: 0 -197px;}
 
-  .banner_box{margin: 0 -1px;}
+  .banner_box{margin: 0 -1px 28px;}
     .banner_item{
       width: 334px;
       height: 250px;
@@ -1061,11 +1069,37 @@ header {
       font-weight: 300;
       display: block;
     }
+
+
+  /*text page*/
+  .text_page_box h1{
+    font-size: 52px;
+    line-height: 52px;
+    color: #000;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  .text_page_box h2{
+    font-size: 21px;
+    line-height: 23px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .text_page_box p{
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  .text_page_box a{font-weight: 400;}
+  .text_page_box a:hover{
+    text-decoration: underline;
+  }
 /*================================>> Footer <<========================================*/
 footer {
   position: relative;
-  padding: 28px 0 45px;
+  padding: 0 0 45px;
   background-color: #fff;
+  margin-top: -471px;
 }
   .footer_list_box{
     float: left;
