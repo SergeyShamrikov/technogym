@@ -474,6 +474,7 @@ header {
   background-position: 100% 0;
   right: 0;
 }
+.main_slider .flex-control-nav{display: none;}
 /*animate slides*/
 .animate{
   opacity: 0;
@@ -603,6 +604,91 @@ header {
   -o-transition-delay: 1.5s;
   transition-delay: 1.5s;
 }
+/*choice_section_box*/
+
+.choice_section_box{
+  border-left: 1px solid #e1e0e3;
+} 
+  [class^="choice_section_item"]{
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #e1e0e3;
+    border-right: 1px solid #e1e0e3;
+  }
+  .choice_section_title{
+    font-size: 30px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  .choice_section_double [class^="choice_section_item"]{
+    width: 50%;
+    height: 456px;
+  }
+  .choice_section_triple [class^="choice_section_item"]{height: 366px;}
+  .choice_section_triple .choice_section_item_left{width: 301px;}
+  .choice_section_triple .choice_section_item_center{width: 400px;}
+  .choice_section_triple .choice_section_item_right{width: 298px;}
+
+    .choice_section_hover{
+      top: 50%;
+      bottom: 50%;
+      left: 50%;
+      right: 50%;
+      overflow: hidden;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+    [class^="choice_section_item"]:hover .choice_section_hover{
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .choice_section_hover img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    .choice_section_double [class^="choice_section_item"] .choice_section_hover img{
+      width: 500px;
+      height: 456px;
+      margin-left: -250px;
+      margin-top: -228px;
+    }
+    .choice_section_triple [class^="choice_section_item"] .choice_section_hover img{
+      height: 366px;
+      margin-top: -183px;
+    }
+    .choice_section_triple .choice_section_item_left .choice_section_hover img{
+      width: 302px;
+      margin-left: -151px;
+    }
+    .choice_section_triple .choice_section_item_center .choice_section_hover img{
+      width: 400px;
+      margin-left: -200px;
+    }
+    .choice_section_triple .choice_section_item_right .choice_section_hover img{
+      width: 298px;
+      margin-left: -149px;
+    }
+
+    .chois_section_link{
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
 /*section1*/
 .section1{
   padding: 45px 0;
