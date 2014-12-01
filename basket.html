@@ -154,16 +154,73 @@
     
     <!-- main content -->
     <div class="container">
-      <div class="main_content text_page_box">
-        <h1>Доставка и оплата</h1>
-        <h2>Трехуровневая система безопасности</h2>
-        <p>
-          Беговая дорожка Jog Now снабжена новейшей трехуровневой системой безопасности для надежной защиты пользователей от случайных травм. Хорошо заметная лазерная метка на полотне помогает определить, находится ли <a href="#">беговая дорожка в движении</a>. Датчики нахождения на тренажере автоматически останавливают тренажер, когда пользователь покидает беговое полотно. Горящая красная лампочка специальной <a href="#">системы InMotionSafety</a> на левой рукояти тренажера сигнализирует о том, что беговая дорожка находится в движении, а мигание красной лампочки позволяет определить, что текущая тренировка подходит к концу.
-        </p>
-        <h2>Трехуровневая система безопасности</h2>
-        <p>
-          Беговая дорожка Jog Now снабжена новейшей трехуровневой системой безопасности для надежной защиты пользователей от случайных травм. Хорошо заметная лазерная метка на полотне помогает определить, находится ли <a href="#">беговая дорожка в движении</a>. Датчики нахождения на тренажере автоматически останавливают тренажер, когда пользователь покидает беговое полотно. Горящая красная лампочка специальной <a href="#">системы InMotionSafety</a> на левой рукояти тренажера сигнализирует о том, что беговая дорожка находится в движении, а мигание красной лампочки позволяет определить, что текущая тренировка подходит к концу.
-        </p>
+      <div class="main_content">
+        <h1 class="title2 pts">Оформление заказа</h1>
+        <h4 class="title3">В вашей корзине</h4>
+        <div class="basket_box">
+          <div class="basket_item clearfix">
+             <figure class="basket_item_img f_left">
+               <img src="images/basket_img1.jpg" alt="">
+             </figure>
+          
+             <div class="basket_item_description">
+               <span class="basket_type_produkt">Беговая дорожка</span>
+               <h4 class="basket_name_produkt pts">RUN PERSONAL</h4>
+               <span class="basket_series_produkt">Серия Personal</span>
+               <div class="wrapper mb20">
+                 <label class="basket_quantity">
+                   <span>Количество</span>
+                   <input type="text">
+                 </label>
+                 <button class="basket_item_delete btn2 f_right">УДАЛИТЬ</button>
+               </div>
+               <p class="basket_item_text">
+                 Конфигурацию тренажера, а также опции доставки и оплаты вы сможете уточнить у менеджера при подтверждении заказа.
+               </p>
+             </div>
+          </div>
+          <div class="basket_item clearfix">
+             <figure class="basket_item_img f_left">
+               <img src="images/basket_img1.jpg" alt="">
+             </figure>
+          
+             <div class="basket_item_description">
+               <span class="basket_type_produkt">Беговая дорожка</span>
+               <h4 class="basket_name_produkt pts">RUN PERSONAL</h4>
+               <span class="basket_series_produkt">Серия Personal</span>
+               <div class="wrapper mb20">
+                 <label class="basket_quantity">
+                   <span>Количество</span>
+                   <input type="text">
+                 </label>
+                 <button class="basket_item_delete btn2 f_right">УДАЛИТЬ</button>
+               </div>
+               <p class="basket_item_text">
+                 Конфигурацию тренажера, а также опции доставки и оплаты вы сможете уточнить у менеджера при подтверждении заказа.
+               </p>
+             </div>
+          </div>
+        </div>
+        <h4 class="title3">Информация о заказе</h4>
+        <form class="place_order_form">
+          <div class="clearfix mb10">
+            <label class="place_order_label">Как вас зовут</label>
+            <input type="text" class="place_order_input">
+          </div>
+          <div class="clearfix mb10">
+            <label class="place_order_label">Контактный телефон <sup>*</sup></label>
+            <input type="text" class="place_order_input">
+          </div>
+          <div class="clearfix mb10">
+            <label class="place_order_label">Адрес e-mail</label>
+            <input type="text" class="place_order_input">
+          </div>
+          <div class="clearfix mb40">
+            <label class="place_order_label">Регион доставки и адрес</label>
+            <input type="text" class="place_order_input">
+          </div>
+          <button class="btn2">ОФОРМИТЬ ЗАКАЗ</button>
+        </form>
       </div>
     </div>
     
@@ -328,7 +385,10 @@
   <script src="js/script.js"></script>
   <script>
   $(document).ready(function(){
-     
+    $('.basket_item_delete').on('click',function(){
+      $(this).parents('.basket_item').remove();  
+    });
+    
   })
   </script>
 </body>
